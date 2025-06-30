@@ -1,7 +1,7 @@
 let hero = ["HeroName", 0]
 let heroLevel = null;
 
-hero[1] = (20000 * Math.random())
+hero[1] = Math.trunc((15000 * Math.random()))
 
 if (hero[1] <= 1000) heroLevel = "Ferro"
 else if (hero[1] > 1000 && hero[1] <= 2000) heroLevel = "Bronze"
@@ -13,4 +13,4 @@ else if (hero[1] > 6000 && hero[1] <= 8000) heroLevel = "Ascendente"
 else if (hero[1] > 8000 && hero[1] < 10000) heroLevel = "Imortal"
 else if (hero[1] > 10000) heroLevel = "Radiante"
 
-console.log("O herói de nome '" + hero[0] + "' está no nível " + "'" + heroLevel + "'")
+console.log(`O herói de nome "${hero[0]}" está no nível "${heroLevel}" com um total de "${hero[1]}" de experiência`)
