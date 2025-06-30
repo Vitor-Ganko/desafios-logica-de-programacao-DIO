@@ -1,6 +1,8 @@
 let hero = ["HeroName", 0]
 let heroLevel = null;
 
+hero[1] = (20000 * Math.random())
+
 if (hero[1] <= 1000) heroLevel = "Ferro"
 else if (hero[1] > 1000 && hero[1] <= 2000) heroLevel = "Bronze"
 else if (hero[1] > 2000 && hero[1] <= 3000) heroLevel = "Prata"
