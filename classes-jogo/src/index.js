@@ -28,3 +28,9 @@ class Hero {
         }
     }
 }
+
+let hero1 = new Hero("Ganksmann", 30, "Guerreiro")
+let hero2 = new Hero("Rowart", 50, "Mago")
+
+hero1.Attack()
+hero2.Attack()
